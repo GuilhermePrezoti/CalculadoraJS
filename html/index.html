@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <script type="text/javascript" src="../javascript/calculadora.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    
+    <div>
+        
+        <form>
+            <label id="lcampoNumerico">Expressão: </label>
+            <input type="text" id="icampoNumerico" placeholder = "0"/><br><br>
+        </form>
+    
+        
+        <button id="soma" onclick="operacao('+')">+</button>
+        <button id="subtracao" onclick="operacao('-')">-</button>
+        <button id="multiplicacao" onclick="operacao('*')">x</button>
+        <button id="divisao" onclick="operacao('/')">&#247</button><br>
+        
+    
+        <button id="potencia" onclick="operacao('^')">a<sup>x</sup></button>
+        <button id="raiz" onclick="operacao('root')">&#x221A</button>
+        <button id="seno" onclick="operacao('sin')">SIN</button>
+        <button id="cosseno" onclick="operacao('cos')">COS</button><br>
+    
+        <button id="tangente" onclick="operacao('tan')">TAN</button>
+        <button id="modulo" onclick="operacao('mod')">MOD</button>
+        <button id="logaritimo" onclick="operacao('log')">LOG</button>
+        <button id="limpeza" onclick="limparCampo()">CE</button><br>
+    </div>
+
+
+
+</body>
+</html>
